@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication1Class</class>
+ <widget class="QWidget" name="QtGuiApplication1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication1</string>
+  </property>
+  <widget class="QPushButton" name="loadImg">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Load Img</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tlbl">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>681</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseImg">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose Img</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="processButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Process</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtGuiApplication1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>chooseImg</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

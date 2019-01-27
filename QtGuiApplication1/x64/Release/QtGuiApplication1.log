@@ -1,0 +1,9 @@
+﻿  ImageWizard.cpp
+  main.cpp
+  QtGuiApplication1.cpp
+  qrc_QtGuiApplication1.cpp
+  moc_QtGuiApplication1.cpp
+qtmain.lib(qtmain_win.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in main.obj
+qtmain.lib(qtmain_win.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in main.obj
+MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\Users\wyatt\source\repos\QtGuiApplication1\x64\Release\\QtGuiApplication1.exe : fatal error LNK1319: 2 mismatches detected
